@@ -24,7 +24,12 @@
                         'normal-text': '#494949',
                         'nav-text': '#737373',
                         'search-bg': '#E9E9E9',
-                        'main-bg': '#F4F4F4'
+                        'main-bg': '#F4F4F4',
+                        'card-01': '#E7C1D3',
+                        'card-02': '#EFDA6E',
+                        'card-03': '#A4DAC3',
+                        'card-04': '#77AAEA',
+                        'card-title': '#1C1C1C',
                     }
                 }
             }
@@ -35,6 +40,24 @@
         .manrope-fonts {
             font-family: "Manrope", sans-serif;
             font-style: normal;
+        }
+
+        .portfolio-01 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .portfolio-02 {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr 1fr;
+        }
+
+        .port-01 {
+            grid-column: span 2;
+        }
+
+        .port-04 {
+            column-span: 1.5fr;
         }
     </style>
 </head>
@@ -109,22 +132,25 @@
                     <div class="w-full md:w-1/2">
                         <div>
                             <a class="btn font-bold bg-white rounded-3xl text-#ABEF5F80"><i
-                            class="fa-solid fa-arrow-right text-title-text "></i>About Us</a>
+                                    class="fa-solid fa-arrow-right text-title-text "></i>About Us</a>
                         </div>
                         <h1 class="my-3 text-4xl font-bold text-title-text">We design thoughtful, liveable spaces</h1>
-                        <p class="font-normal-text font-medium">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                        <p class="font-normal-text font-medium">The barn house captivates with its blend of rustic charm
+                            and modern sophistication, featuring weathered wood, sleek metal accents.</p>
                         <div class="bg-white w-full p-6 rounded-2xl flex gap-5 my-5">
                             <img src="assets/commercial.png" alt="">
                             <div>
                                 <h3 class="text-xl font-extrabold font-normal-text">Commercial</h3>
-                                <p class="font-nav-text font-medium">The barn house captivates with its blend <br> of rustic charm and modern.</p>
+                                <p class="font-nav-text font-medium">The barn house captivates with its blend <br> of
+                                    rustic charm and modern.</p>
                             </div>
                         </div>
                         <div class="bg-white w-full p-6 rounded-2xl flex gap-5">
                             <img src="assets/residential.png" alt="">
                             <div>
                                 <h3 class="text-xl font-extrabold font-normal-text">Residential</h3>
-                                <p class="font-nav-text font-medium">The barn house captivates with its blend <br> of rustic charm and modern.</p>
+                                <p class="font-nav-text font-medium">The barn house captivates with its blend <br> of
+                                    rustic charm and modern.</p>
                             </div>
                         </div>
                     </div>
@@ -133,7 +159,227 @@
                     </div>
                 </div>
             </section>
+
+            <!-- Likes Section................... -->
+            <section class="w-10/12 mx-auto my-10 md:my-24">
+
+            </section>
+
+            <!-- Work Progress Section............ -->
+            <section class="w-10/12 mx-auto my-10 md:my-24">
+                <div class="text-center">
+                    <div>
+                        <a class="btn font-bold bg-white rounded-3xl text-#ABEF5F80"><i
+                                class="fa-solid fa-arrow-right text-title-text "></i>About Us</a>
+                    </div>
+                    <h1 class="my-3 text-4xl font-bold text-title-text">Our Works Process</h1>
+                    <p class="font-normal-text font-medium mb-10">The barn house captivates with its blend of rustic
+                        charm and modern sophistication,<br> featuring weathered wood, sleek metal accents.</p>
+                </div>
+                <div class="flex flex-col gap-5 md:flex-row">
+                    <!-- Card 01..................... -->
+                    <div class="card bg-card-01">
+                        <div class="card-body">
+                            <div>
+                                <img src="assets/concept.png" alt="">
+                            </div>
+                            <h2 class="card-title text-card-title text-xl font-extrabold">Concept</h2>
+                            <p class="font-medium font-normal-text">The barn house captivates with its blend of rustic
+                                charm and modern.</p>
+                        </div>
+                    </div>
+                    <!-- Card 02..................... -->
+                    <div class="card bg-card-02">
+                        <div class="card-body">
+                            <div>
+                                <img src="assets/flow-chart.png" alt="">
+                            </div>
+                            <h2 class="card-title text-card-title text-xl font-extrabold">Design Process</h2>
+                            <p class="font-medium font-normal-text">The barn house captivates with its blend of rustic
+                                charm and modern.</p>
+                        </div>
+                    </div>
+                    <!-- Card 03..................... -->
+                    <div class="card bg-card-03">
+                        <div class="card-body">
+                            <div>
+                                <img src="assets/vision.png" alt="">
+                            </div>
+                            <h2 class="card-title text-card-title text-xl font-extrabold">Supervision</h2>
+                            <p class="font-medium font-normal-text">The barn house captivates with its blend of rustic
+                                charm and modern.</p>
+                        </div>
+                    </div>
+                    <!-- Card 04..................... -->
+                    <div class="card bg-card-04">
+                        <div class="card-body">
+                            <div>
+                                <img src="assets/budget-planning.png" alt="">
+                            </div>
+                            <h2 class="card-title text-card-title text-xl font-extrabold">Budget Planning</h2>
+                            <p class="font-medium font-normal-text">The barn house captivates with its blend of rustic
+                                charm and modern.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
+
+        <!-- Portfolio Section................... -->
+        <section class="w-10/12 mx-auto">
+            <div class="text-center">
+                <div>
+                    <a class="btn font-bold bg-dark-02 rounded-3xl text-#ABEF5F80"><i
+                            class="fa-solid fa-arrow-right text-title-text "></i>About Us</a>
+                </div>
+                <h1 class="my-3 text-4xl font-bold text-title-text">Our Latest Portfolio</h1>
+                <p class="font-normal-text font-medium mb-10">The barn house captivates with its blend of rustic charm
+                    and modern sophistication,<br> featuring weathered wood, sleek metal accents.</p>
+            </div>
+            <div class="grid gap-4">
+                <div class="gap-4 portfolio-01">
+
+                    <!-- 1st Portfolio............... -->
+                    <div class="border rounded-2xl p-6 md:flex gap-5 port-01">
+                        <img class="mx-auto" src="assets/img1.png" alt="">
+                        <div class="flex flex-col justify-between">
+
+                            <h3 class="text-2xl font-extrabold font-normal-text">Commercial</h3>
+                            <p class="font-nav-text font-medium">The barn house captivates with its blend of rustic
+                                charm and modern. The barn house captivates with its blend of rustic charm and modern .
+                            </p>
+                            <div>
+                                <a class="font-extrabold text-title-text">View Details <i
+                                        class="fa-solid fa-arrow-right -rotate-45 origin-center text-title-text bg-gradient-to-t bg-orange-500 w-7 h-7 bg-dark-02 inline-flex rounded-full justify-center items-center"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2nd Portfolio............... -->
+                    <div class="w-full border rounded-2xl p-6 port-02">
+                        <img class="" src="assets/img2.png" alt="">
+                    </div>
+                </div>
+                <div class="portfolio-02 gap-4">
+                    <!-- 3rd Portfolio............... -->
+                    <div class="border rounded-2xl p-6 port-03">
+                        <img class="" src="assets/img3.png" alt="">
+                    </div>
+
+                    <!-- 4th Portfolio............... -->
+                    <div class="border rounded-2xl p-6 md:flex gap-5 port-04">
+                        <img class="mx-auto" src="assets/img4.png" alt="">
+                        <div class="flex flex-col justify-between">
+
+                            <h3 class="text-2xl font-extrabold font-normal-text">Commercial</h3>
+                            <p class="font-nav-text font-medium">The barn house captivates with its blend of rustic
+                                charm and modern.</p>
+                            <div>
+                                <a class="font-extrabold text-title-text">View Details <i
+                                        class="fa-solid fa-arrow-right -rotate-45 origin-center text-title-text bg-gradient-to-t bg-orange-500 w-7 h-7 bg-dark-02 inline-flex rounded-full justify-center items-center"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 5th Portfolio............... -->
+                    <div class="border rounded-2xl p-6 port-05">
+                        <img class="" src="assets/img5.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Articles Section..................... -->
+        <section class="bg-main-bg mt-24">
+            <div class="w-10/12 mx-auto">
+                <div class="my-10 md:my-24">
+                    <div class="text-center">
+                        <div>
+                            <a class="btn font-bold bg-dark-02 rounded-3xl text-#ABEF5F80"><i
+                                    class="fa-solid fa-arrow-right text-title-text "></i>Rinterio News</a>
+                        </div>
+                        <h1 class="my-3 text-4xl font-bold text-title-text">Read Our Articles and News</h1>
+                        <p class="font-normal-text font-medium mb-10">The barn house captivates with its blend of rustic
+                            charm and modern sophistication,<br> featuring weathered wood, sleek metal accents.</p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                        <!-- Card 01................... -->
+                        <div class="card bg-base-100 w-96 shadow-xl mx-auto">
+                            <figure class="px-10 pt-10">
+                                <img src="assets/article1.png" alt="Shoes" class="rounded-xl" />
+                            </figure>
+                            <div class="card-body items-left text-left">
+                                <div class="flex gap-4">
+                                    <div class="text-nav-text flex gap-2 items-center">
+                                    <i class="fa-regular fa-calendar-days"></i>
+                                    <p>July 14, 2025</p>
+                                    </div>
+                                    <div class="text-nav-text flex gap-2 items-center">
+                                    <i class="fa-solid fa-user-tie"></i>
+                                    <p>By Admin</p>
+                                    </div>
+                                </div>
+                                <h2 class="font-extrabold text-xl text-normal-text">How to choose the furniture right of your home.</h2>
+                                <p class="font-medium text-nav-text">The barn house captivates with its blend of rustic charm and modern.</p>
+                                <div>
+                                    <a class="font-extrabold text-title-text">Read More <i
+                                    class="fa-solid fa-arrow-right -rotate-45 origin-center text-title-text bg-gradient-to-t bg-orange-500 w-7 h-7 bg-dark-02 inline-flex rounded-full justify-center items-center"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 02................... -->
+                        <div class="card bg-base-100 w-96 shadow-xl mx-auto">
+                            <figure class="px-10 pt-10">
+                                <img src="assets/article2.png" alt="Shoes" class="rounded-xl" />
+                            </figure>
+                            <div class="card-body items-left text-left">
+                                <div class="flex gap-4">
+                                    <div class="text-nav-text flex gap-2 items-center">
+                                    <i class="fa-regular fa-calendar-days"></i>
+                                    <p>July 14, 2025</p>
+                                    </div>
+                                    <div class="text-nav-text flex gap-2 items-center">
+                                    <i class="fa-solid fa-user-tie"></i>
+                                    <p>By Admin</p>
+                                    </div>
+                                </div>
+                                <h2 class="font-extrabold text-xl text-normal-text">How to choose the furniture right of your home.</h2>
+                                <p class="font-medium text-nav-text">The barn house captivates with its blend of rustic charm and modern.</p>
+                                <div>
+                                    <a class="font-extrabold text-title-text">Read More <i
+                                    class="fa-solid fa-arrow-right -rotate-45 origin-center text-title-text bg-gradient-to-t bg-orange-500 w-7 h-7 bg-dark-02 inline-flex rounded-full justify-center items-center"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 03................... -->
+                        <div class="card bg-base-100 w-96 shadow-xl mx-auto">
+                            <figure class="px-10 pt-10">
+                                <img src="assets/article3.png" alt="Shoes" class="rounded-xl" />
+                            </figure>
+                            <div class="card-body items-left text-left">
+                                <div class="flex gap-4">
+                                    <div class="text-nav-text flex gap-2 items-center">
+                                    <i class="fa-regular fa-calendar-days"></i>
+                                    <p>July 14, 2025</p>
+                                    </div>
+                                    <div class="text-nav-text flex gap-2 items-center"><i class="fa-solid fa-user-tie"></i>
+                                    <p>By Admin</p>
+                                    </div>
+                                </div>
+                                <h2 class="font-extrabold text-xl text-normal-text">How to choose the furniture right of your home.</h2>
+                                <p class="font-medium text-nav-text">The barn house captivates with its blend of rustic charm and modern.</p>
+                                <div>
+                                    <a class="font-extrabold text-title-text">Read More <i class="fa-solid fa-arrow-right -rotate-45 origin-center text-title-text bg-gradient-to-t bg-orange-500 w-7 h-7 bg-dark-02 inline-flex rounded-full justify-center items-center"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- Footer Section......................... -->

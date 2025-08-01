@@ -42,23 +42,22 @@
             font-style: normal;
         }
 
-        .portfolio-01 {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-        }
-
         .portfolio-02 {
             display: grid;
-            grid-template-columns: 1fr 1.5fr 1fr;
+            grid-template-columns: 1fr 2fr 1fr;
+            
         }
 
         .port-01 {
             grid-column: span 2;
         }
-
-        .port-04 {
-            column-span: 1.5fr;
+       
+        @media screen and (max-width: 640px) {
+            .portfolio-02 {
+                grid-template-columns: repeat(1, 1fr);
+            }
         }
+
     </style>
 </head>
 
@@ -237,12 +236,12 @@
                     and modern sophistication,<br> featuring weathered wood, sleek metal accents.</p>
             </div>
             <div class="grid gap-4">
-                <div class="gap-4 portfolio-01">
+                <div class="gap-4 portfolio-01 grid grid-cols-1 md:grid-cols-3">
 
                     <!-- 1st Portfolio............... -->
-                    <div class="border rounded-2xl p-6 md:flex gap-5 port-01">
-                        <img class="mx-auto" src="assets/img1.png" alt="">
-                        <div class="flex flex-col justify-between">
+                    <div class="border rounded-2xl p-6 flex flex-col md:flex-row gap-5 port-01">
+                        <img class="mx-auto w-full md:w-1/3" src="assets/img1.png" alt="">
+                        <div class="w-2/3 flex flex-col justify-between">
 
                             <h3 class="text-2xl font-extrabold font-normal-text">Commercial</h3>
                             <p class="font-nav-text font-medium">The barn house captivates with its blend of rustic
@@ -256,20 +255,20 @@
                     </div>
 
                     <!-- 2nd Portfolio............... -->
-                    <div class="w-full border rounded-2xl p-6 port-02">
-                        <img class="" src="assets/img2.png" alt="">
+                    <div class="w-full border rounded-2xl p-6 port-02 ">
+                        <img class="w-full" src="assets/img2.png" alt="">
                     </div>
                 </div>
-                <div class="portfolio-02 gap-4">
+                <div class="grid portfolio-02 gap-4">
                     <!-- 3rd Portfolio............... -->
                     <div class="border rounded-2xl p-6 port-03">
-                        <img class="" src="assets/img3.png" alt="">
+                        <img class="w-full" src="assets/img3.png" alt="">
                     </div>
 
                     <!-- 4th Portfolio............... -->
-                    <div class="border rounded-2xl p-6 md:flex gap-5 port-04">
-                        <img class="mx-auto" src="assets/img4.png" alt="">
-                        <div class="flex flex-col justify-between">
+                    <div class="border rounded-2xl p-6 flex gap-5 justify-between flex-col md:flex-row port-04">
+                        <img class="mx-auto w-full md:w-1/2" src="assets/img4.png" alt="">
+                        <div class="w-1/2 flex flex-col  justify-between">
 
                             <h3 class="text-2xl font-extrabold font-normal-text">Commercial</h3>
                             <p class="font-nav-text font-medium">The barn house captivates with its blend of rustic
@@ -283,14 +282,14 @@
 
                     <!-- 5th Portfolio............... -->
                     <div class="border rounded-2xl p-6 port-05">
-                        <img class="" src="assets/img5.png" alt="">
+                        <img class="w-full" src="assets/img5.png" alt="">
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Articles Section..................... -->
-        <section class="bg-main-bg mt-24">
+        <section class="bg-main-bg mt-24 py-1">
             <div class="w-10/12 mx-auto">
                 <div class="my-10 md:my-24">
                     <div class="text-center">
